@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding/border are included in the element's total width/height */
+}
+
+body,html{
+    min-height: 100vh;
+}
+body{
+    background-color: rgb(122, 199, 121);
+    height: 100vh; /* Full height of the screen */
+    margin: 0;
+}
+
+header {
+    background-color: #128633; /* Dark background */
+    padding: 10px 20px;
+}
+nav ul {
+    list-style: none; /* Remove default list bullets */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arrange items horizontally */
+    justify-content: center; /* Center the items */
+}
+
+
+nav ul li {
+    margin: 0 15px; /* Space between each item */
+}
+nav ul li a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    display: block; /* Make the link clickable over the entire area */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+nav ul li a:hover {
+    background-color: #097131; /* Darken the background on hover */
+}
+
+.marquee {
+    padding: 10px;
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hide the overflow text */
+    white-space: nowrap; /* Keep the text on one line */
+}
+
+.marquee-text {
+    display: inline-block;
+    padding-left: 100%;
+    color:blue;
+    animation: scroll-left 30s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to the left, off-screen */
+    }
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.about{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    color:white;
+   padding: 30px;
+    margin-top: 30px;
+
+}
+
+.contact{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    color: white;
+   padding: 30px;
+    margin-top: 30px;
+
+}
+h1{
+    margin-bottom: 20px;
+}
+
+p{
+    margin-top: 30px;
+    line-height: 1.6;
+    font-size: 20px;
+}
+.p1{
+    line-height: 1.6;
+    font-size: x-large;
+    margin-bottom: 30px;
+}

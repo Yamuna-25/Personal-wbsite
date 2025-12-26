@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAMUNA R - Personal Website</title>
+    <link rel="stylesheet" href="photostyle.css"> <!-- Link to your stylesheet -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="intro.html#about">About</a></li>
+                <li><a href="Project.html">My Projects</a></li>
+                <li><a href="Photo.html">My Clicks</a>
+                <li><a href="Art.html">My Arts&Crafts</a></li></li>
+                <li><a href="intro.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="thumbnail-container">
+        <div class="thumbnail" id="thumb1">
+            <img src="images/1.jpg" alt="Thumbnail 1" class="thumbnail-img">
+        </div>
+        <div class="thumbnail" id="thumb2">
+            <img src="images/2.jpg" alt="Thumbnail 2" class="thumbnail-img">
+        </div>
+                
+    </div>
+
+    <!-- Modal to display enlarged image -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <img src="" id="lightbox-image" class="lightbox-image">
+    </div>
+
+    <script src="photoscript.js"></script>
+    
+</body>
+</html>
